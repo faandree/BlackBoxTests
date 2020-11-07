@@ -1,0 +1,47 @@
+\documentclass[a4paper]{article}
+
+\usepackage{amsmath, amsfonts}
+\usepackage{booktabs}
+\usepackage[bookmarksnumbered]{hyperref}
+\usepackage[T1]{fontenc} %encoding
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel} %Portuguese-specific commands
+
+\title{Relatorio BlackBox Test}
+\author{João Cunha}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\clearpage
+
+\section{Equivalence Class Partition (ECP)}
+\subsection{\textbf{Método} String Classify () }
+Pré-Condições
+\begin{itemize}
+  \item Componente Inicializado atravez do construtor
+  \item Inputs sempre positivos
+\end{itemize}
+\input{classify_ecp.tex}
+
+\section{Bondary Value Analysis (BVA)}
+\subsection{\textbf{Método} String Classify () }
+Condições
+\begin{itemize}
+  \item [\textbf{M}] \textit{MaxInt}
+  \item [\textbf{R}] $\in \mathbb{Z}^+: x > 0 \land x < MaxInt$
+  \item [\textbf{N}] \textit{null}
+\end{itemize}
+\input{classify_bva.tex}
+
+\section{Test Cases}
+\subsection{\textbf{Método} String Classify () }
+Condições
+\begin{itemize}
+  \item [\textbf{M}] \textit{MaxInt}
+  \item [\textbf{N}] \textit{null}
+\end{itemize}
+\input{classify_tc.tex}
+
+\end{document}

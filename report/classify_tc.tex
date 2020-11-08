@@ -1,22 +1,42 @@
+\subsubsection{ECP Test cases}
 \begin{center}
   \begin{tabular}{ccccc}
     \textbf{Test ID} & \textbf{Input Cases} & \textbf{Expected} & \textbf{Result} & \textbf{Notes} \\
-    \#1  & $(0,0,0)$   & impossible    & impossible   & PASS  \\
-    \#2  & $(2,2,2)$   & equilateral   & equilateral  & PASS  \\
-    \#3  & $(2,2,1)$   & isossceles    & isossceles   & PASS  \\
-    \#4  & $(5,12,13)$ & right-angled  & right-angled & PASS  \\
-    \#5  & $(2,3,4)$   & scalene       & scalene      & PASS  \\
-    \#6  & $(4,1,1)$   & (not) impossible   & scalene      & PASS \\
-    \#7  & $(1,1,3)$   & (not) equilateral  & isossceles   & PASS \\
-    \#8  & $(1,2,3)$   & (not) isossceles   & scalene      & PASS \\
-    \#9  & $(1,1,3)$   & (not) right-angled & isossceles   & PASS \\
-    \#10 & $(3,4,5)$   & (not) scalene      & right-angled & PASS \\
-    \#11 & $(-1,-1,-1)$ & impossible    & impossible  & PASS \\
-    \#12 & $(M,M,M)$    & equilateral   & equilateral & PASS \\
-    \#13 & $(M+1,M+1$   & impossible    & impossible  & PASS \\
-         & $,M+1)$ \\
-    \#14 & $(-1,1,1)$   & impossible    & impossible  & PASS \\
-    \#19 & $(2,1,N)$    & NullException & $\dots$     & Doesn't \\
-         &              &               &             & compile \\
+    \#1  & $(0,0,0)$    & impossible    & impossible   & PASS  \\
+    \#2  & $(2,2,2)$    & equilateral   & equilateral  & PASS  \\
+    \#3  & $(2,2,1)$    & isossceles    & isossceles   & PASS  \\
+    \#4  & $(5,12,13)$  & right-angled  & right-angled & PASS  \\
+    \#5  & $(2,3,4)$    & scalene       & scalene      & PASS  \\
+    \#6  & $(4,1,1)$    & (not) impossible   & scalene      & PASS \\
+    \#7  & $(1,1,3)$    & (not) equilateral  & isossceles   & PASS \\
+    \#8  & $(1,2,3)$    & (not) isossceles   & scalene      & PASS \\
+    \#9  & $(1,1,3)$    & (not) right-angled & isossceles   & PASS \\
+    \#10 & $(3,4,5)$    & (not) scalene      & right-angled & PASS \\
   \end{tabular}
 \end{center}
+
+\subsubsection{BVA Test cases}
+\begin{center}
+  \begin{tabular}{ccccc}
+    \textbf{Test ID} & \textbf{Input Cases} & \textbf{Expected} & \textbf{Result} & \textbf{Notes} \\
+    \#1 & $(1,1,M+1)$   & impossible    & impossible  & PASS \\
+    \#2 & $(1,M+1,1)$   & impossible    & impossible  & PASS \\
+    \#3 & $(1,M+1,M+1)$ & impossible    & impossible  & PASS \\
+    \#4 & $(M+1,1,1)$   & impossible    & impossible  & PASS \\
+    \#5 & $(M+1,1,M+1)$ & impossible    & impossible  & PASS \\
+    \#6 & $(M+1,M+1$    & impossible    & impossible  & PASS \\
+         & $,M+1)$ \\
+    \#7 & $(1,1,-1)$    & impossible    & impossible  & PASS \\
+    \#8 & $(1,-1,1)$    & impossible    & impossible  & PASS \\
+    \#9 & $(1,-1,-1)$   & impossible    & impossible  & PASS \\
+    \#10 & $(-1,1,1)$    & impossible    & impossible  & PASS \\
+    \#11 & $(-1,1,-1)$   & impossible    & impossible  & PASS \\
+    \#12 & $(-1,1,-1)$   & impossible    & impossible  & PASS \\
+    \#13 & $(-1,-1,1)$   & impossible    & impossible  & PASS \\
+    \#14 & $(-1,-1,-1)$  & impossible    & impossible  & PASS \\
+    \#15 & $(2,1,N)$     & NullException & $\dots$     & Doesn't \\
+         &               &               &             & compile \\
+  \end{tabular}
+\end{center}
+
+
